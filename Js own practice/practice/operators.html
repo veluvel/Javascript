@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+</head>
+<body>
+    
+
+    <script>
+        // bodmas sum
+        //1.
+        // let a;
+        // a=5;
+        // let b = 2;
+        // // (a+b)= a*a +b*b +2*a*b
+        // c= (a*a)+ (b*b) + (2*a*b);
+        // d=c; //assign 'c' values in 'd'
+        // console.log(d); //49
+
+        // //2.
+        // let e=8, f=64, g=8, h=34, i=5;
+        // let j= e+f/g-(h/i);
+        // console.log(j); //9.2
+
+        // //3.
+        // let k=8,l=64;
+        // let m=(k/l)+(k/k)*(1/k)*k+k;
+        // console.log(m); //9.125
+
+        // //4.
+        // let num1= 10,num2=50;
+        // let num3= 9*num1; 
+        // let num4=num3**3;
+        // console.log(num4/num1) //72900
+       
+        // //5. post decrement
+        // let num6 = 6;
+        //     num6--;
+        //     console.log(num6); //5
+
+        // //6. post increment
+        // let num7 = 10;
+        //     num7++;
+        //     console.log(num7); //11
+        
+        // //7. pre decrement
+        // let num8=15;
+        // console.log(--num8); //14
+
+        // //8. pre increment
+        // let num9=19;
+        // console.log(++num9);
+    
+        // //9.comparison operator
+        // let a1=prompt("Enter the value");
+        // let b1=prompt("Enter the value");
+        // if(a1>=b1){
+        //     console.log("true1");
+        // }
+        // else{
+        //     console.log("false1");
+        // }
+
+        //10.logical operator
+        // let person1 = prompt('Enter the person1 age');
+        // let person2 = prompt('Enter the person2 age');
+        // if(person1 > person2){
+        //     console.log("Eligible");
+        // }
+        // else{
+        //     console.log("Not eligible");
+        // }
+
+        //11.logical operator
+       
+        // let male = prompt("Enter Male age");
+        // let female = prompt("Enter Female age");
+
+        // if(male >=23 && female >=21){
+        //     console.log("eligible")
+        // }
+        // else{
+        //     console.log("Not eligible")
+        // }
+
+        //12.logical operator
+        // let age =parseInt(prompt("age"));
+        //     if( age <= 18){
+        //         console.log("you are child");
+        //     }
+        //     else if( age <= 30){
+        //         console.log("you are adult");
+        //     }
+        //     else{
+        //         console.log("you are old")
+        //     }
+
+        //13. equal to operator
+        // const val1 = 5, val2 = 2, val3 = 'hello';
+
+        // console.log(val1 == 5);     // true
+        // console.log(val2 == '2');   // true
+        // console.log(val3 == 'Hello');  // false
+        
+        // //14.not equal to operator
+        // console.log(val1 != '4') //true
+        // console.log(val3 !== 'hello') //false
+
+        // //15. strict equal operator
+        // console.log(val1 === 5); // true
+        // console.log(val1 === '5'); // false
+
+        // //16. strict equal operator
+        // console.log(val1 !== 5); // false
+        // console.log(val1 !== '5'); // true
+
+
+        //17.LOGICAL OPERATOR
+        // const x = true, y = false;
+        // const z = 4;
+        
+        // //18. logical AND
+        // console.log(x && x); // true
+        // console.log(x && y);  // false
+
+        // console.log((z > 2) && (z < 2)); // false
+
+        // //19.increment
+        // for (v=0;v<=20;v++){
+        //     document.write(v)
+        //     document.write("<br>")
+        // }
+
+        // document.write("<br>")
+
+        // for (u=0;u<=10;++u){
+        //     document.write(u)
+        // }
+
+        // document.write("<br>")
+
+        // //20.decrement
+        // for (w=10; w>=0; w--){
+        //     document.write(w);
+        // }
+        
+        // document.write("<br>")
+
+
+        // for (w=10; w>=0; w--){
+        //     document.write(w);
+        // }
+        
+        
+        //for loop
+        // let v1 = prompt("Enter the value");
+
+        // for(i=1;i<=v1;i++){
+        //     document.write(i + "<br>")
+        // }
+
+        // practice for largest number in three values
+        // let a1 = prompt("value 1");
+        // let a2 = prompt("value 2");
+        // let a3 = prompt("value 3");
+
+        // if(a1>a2){
+        //     if(a1>a3){
+        //         document.write('A1 is Biggest is ' + a1)
+        //     }
+        //     else{
+        //         document.write('A3 is Biggest is ' + a3)
+        //     }
+        // }
+        // else if (a2>a3){
+        //      document.write('A2 is Biggest number is ' + a2)
+        // }
+        // else{
+        //     document.write('A3 is Biggest number is ' + a3)
+        // }
+
+        //
+        let a1 = prompt("value 1");
+        let a2 = prompt("value 2");
+        let a3 = prompt("value 3");
+        let a4 = prompt("value 4");
+
+
+        if(a1>a2){
+            if(a1>a3){
+                document.write('A1 is Biggest is ' + a1)
+            }
+            else if(a1>a4){
+                document.write('A1 is Biggest is ' + a1)
+            }
+        }
+        else if (a2>a3){
+             document.write('A2 is Biggest number is ' + a2)
+        }
+        else if(a3>a4){
+            document.write('A3 is Biggest number is ' + a3)
+        }
+        else{
+            document.write('A4 is Biggest number is ' + a4)
+        }
+
+</script>
+</body>
+</html>

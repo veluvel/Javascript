@@ -11,14 +11,56 @@
 
     <script>
         //equal to operators
-        const a=5, b=2, c='hello';
+        const a=5, b=2, c='hello';  //true if the operands are equal
 
-        console.log(a==5);  //true if the operands are equal
-        console.log(b=='2');
-        console.log(c=='Hello');
+        console.log(a==5); //true
+        console.log(b=='2'); // true
+        console.log(c=='Hello'); //false
 
-        //not equal to operators
         
-    </script>
+        //not equal to operators
+        const d=2, e="77"; //true if the operands are not equal
+
+        console.log(d!=3); //true 
+        console.log(e!=77); //false
+    
+        //*********************************************************
+
+        //strict equal to operator
+        const f=5;  // true if the operands are equal and of the same type
+        
+        console.log(f===5); // true
+        console.log(f==='5'); //false
+
+        //strict not equal to operator
+        const g=10, h='height';
+
+        console.log(g!==10); //false
+        console.log(h!=='width'); //true
+
+        //*********************************************************
+    
+        //relational operators
+        let i=5; //greater r lesser
+
+        console.log(i>5); //false
+        console.log(i>=5); //true
+
+        console.log(i<5); // false
+        console.log(i<=5); // true
+   
+        //*********************************************************
+
+        const j=5,k=8,l=10;
+
+        console.log(j==5); //true
+        console.log(k!=8); //false
+        console.log(l===10); //true
+        console.log(j!==5); //false
+        console.log(k!==100); //true
+        console.log(l===5); //false
+        
+
+   </script>
 </body>
 </html>
