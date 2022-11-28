@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop</title>
+</head>
+<body>
+    
+    <script>
+        //1
+        //12
+        //123
+        //1234
+        //12345
+
+        // for(i=1;i<=5;i++){
+        //     for(j=1;j<=i;j++){
+        //         document.write(j);
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // document.write("<br>");
+
+        //11111
+        //22222
+        //33333
+        //44444
+        //55555
+        
+        // let num=parseInt(prompt("Enter the value"));
+        // for(i=1;i<=num;i++){
+        //     for(j=1;j<=num;j++){
+        //         document.write(i);
+        //     }
+        //     document.write("<br>");
+        // }
+
+        //find greater number in four numbers
+        let a = parseInt(prompt("enter the value"));
+        let b = parseInt(prompt("enter the value"));
+        let c = parseInt(prompt("enter the value"));
+        let d = parseInt(prompt("enter the value"));
+
+        if(a>b){
+            if(a>c){
+                if(a>d){
+                    document.write("greater " + a);
+                }
+                else{
+                    document.write("greater " + d)
+                }
+            }
+            else{
+                if(c>d){
+                    document.write("greater " + c);
+                }
+                else{
+                    document.write("greater " + d);
+                }
+            }
+        }
+        else{
+            if(b>c){
+                if(b>d){
+                    document.write("greater " + b);
+                }
+                else{
+                    document.write("greater " + d);
+                }
+            }
+            else{
+                if(c>d){
+                    document.write("greater " + c);
+                }
+                else{
+                    document.write("greater " + d);
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
