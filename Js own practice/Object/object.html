@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+<script>
+
+//************************************************************************       
+        // object kulla value enter  pandrathu
+
+        // let main = (prompt("main array"));
+        // var d = object(main);
+        // console.log(d)
+
+        // function object(b){
+        //     let out=[];
+        //     for(i=0;i<b;i++){
+        //         c={
+        //             name: "",
+        //             id: "",
+        //             qualification: ""
+        //         }
+        //         c.name=prompt("Enter Name")
+        //         c.id=prompt("Enter Id")
+        //         c.qualification=prompt("Enter Degree")
+        //         out[i]=c;
+        //     }
+        //     return out  
+        // }
+
+//************************************************************************
+        //array kulla irukura index value print pandrathu
+
+        // let a = prompt('Array length');
+        // let arr=[]
+        // for(b=0;b<a;b++){
+        //     var i = prompt("Enter the value");
+        //     arr[b]=i
+        // }
+        // console.log(arr);
+        
+        // let x= parseInt(prompt("Enter the index"));
+        // let y= arr[x]
+        // console.log(y);
+    
+//************************************************************************
+        //array kulla irukura index value print pannanum
+        // let x=[];
+        // let main = prompt("Enter the Main length");
+
+        //     for(i=0;i<main; i++){
+        //     sub = prompt("Enter the sub length");            
+        //     y=[];
+        //     for(j=0;j<sub;j++){
+        //         y[j]=prompt("Enter a value");
+        //     };
+        //     x[i] = y; 
+        // }
+        // funName(x)
+        
+        // function funName(xvalue){
+        // let a = parseInt(prompt("Enter the 1 index value"));
+        // let b = parseInt(prompt("Enter the 1 in 1 index value"));
+
+        // console.log(xvalue[a][b]);
+        // }
+
+//************************************************************************
+            function doit(a,z){
+				if(z==0){
+					b=parseInt(prompt("enter a value"));
+					a[i]=b;
+					}
+				else{
+					b=[];
+					for(j=0;j<z;j++){
+							b[j]=parseInt(prompt("enter  values"));
+						}
+					a[i]=b;
+				}
+				}
+
+
+				function read(a,main){	
+				if(a.length-1< main){
+					alert("enter vaild index");
+				
+				}
+				else{
+					if(a[main]!=[]){
+						console.log(a[main]);
+					}
+					else{
+					var sub=parseInt(prompt("enter element index"));
+				    console.log(a[main][sub]);
+					}
+				  
+				}
+		    }
+       
+
+
+
+</script>
+</body>
+</html>
