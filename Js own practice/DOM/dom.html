@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <h1>velmurugan</h1>   
+
+    <div>
+        <label for="">Password</label>
+        <input type="password" id="password">
+        <br>
+        <input type="checkbox" name="" id="ch">
+        <label for="">Show password</label>
+    </div>
+
+    <input type="checkbox" name="" id="">
+    
+
+<script>    
+    
+    function check(){
+        var password = document.getElementById("password");
+        var ch = document.getElementById("ch");
+        if(ch.checked){
+            password.setAttribute("type","text");
+        }
+        else{
+            password.setAttribute("type","password")
+        }
+    }
+        ch.addEventListener("click",check);
+
+
+
+
+
+
+
+
+
+        //get element and style color
+        // let getelement = prompt("Enter HTML Element"); 
+        // let heading = document.createElement(getelement);  // create
+        // document.body.appendChild(heading);          // position
+        // let value = prompt("Content");
+        // heading.innerHTML = value;
+        
+        // heading.setAttribute("style","color:");
+        // heading.style.color=prompt("Enter the color")
+
+
+        //get element and element
+        // let getelement1 = prompt("Enter HTML Element"); 
+        // let create1 = document.createElement(getelement1);
+        // document.body.appendChild (create1);
+
+        // let getelement2 = prompt ("Enter 2nd Element");
+        // let create2 = document.createElement(getelement2);
+        // create1.appendChild(create2)
+        
+        // let getelement3 = prompt ("Enter 2nd Element");
+        // let create3 = document.createElement(getelement3);
+        // create1.appendChild(create3)
+    
+        /***************
+         
+         ***************/ 
+
+        // var elementget = document.getElementsByTagName('h1');
+        // elementget[0].innerHTML = "vel";
+        
+    </script>
+</body>
+</html>
