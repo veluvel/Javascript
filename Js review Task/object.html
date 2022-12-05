@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Task</title>
+</head>
+<body>
+    
+
+    <script>
+        //program to add key/value pair in object
+        const Addkeyvalues = { 
+            Name : 'vel',
+            qualification : 'BE',
+            dob : '06-May-1997',
+            gender : 'male'
+        }
+        Addkeyvalues.location = 'Tenkasi';
+        Addkeyvalues['height'] = '172 cm'
+        console.log(Addkeyvalues);
+
+        //program to remove key/value in pair
+        const removekeyvalues = { 
+            Name : 'vel',
+            qualification : 'BE',
+            dob : '06-May-1997',
+            gender : 'male'
+        }
+        delete(removekeyvalues.qualification);
+        console.log(removekeyvalues);
+        
+        //program to change key/value in pair
+        let changekeyvalues={
+           Name : 'vel',
+           age: 26,
+           location : 'Tenkasi',
+           workexperience: '3 years'
+        }   
+
+        let renameObjectkey = (changekeyvalues) =>{
+            changekeyvalues.Firstname = changekeyvalues.Name;
+            changekeyvalues['Currentage'] = changekeyvalues['age'];
+            delete changekeyvalues.Name;
+            delete changekeyvalues.age;
+        }
+        renameObjectkey(changekeyvalues);
+        console.log(changekeyvalues);
+        // changekeyvalues.firstName=changekeyvalues.Name;
+        // delete changekeyvalues.Name;
+        
+
+        //object in array and object and function
+
+        let object = {
+                Name : mydishes(),
+                Estd : 'Since 1997',
+                SpecialItem : 'Biriyani',
+                location : 'tenkasi',
+                listitems :['idly','dosa','poori','pongal'], 
+                snacks : {
+                    cooldrinks : "frooti",
+                    vadai : "ulunthu vadai"
+                }
+        }
+        function mydishes(){
+                        a=prompt("Enter the name");
+                        return a;
+                    }
+        console.log(object.Name);
+        console.log(object['listitems']);
+        console.log(object.snacks['cooldrinks'])
+        // console.log(object.Name);
+        console.log(object.listitems[2]);
+    </script>
+</body>
+</html>
