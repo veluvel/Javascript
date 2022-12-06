@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <style>
+        #category,#result{
+            font-size: 30px;
+            font-weight: bold;            
+        }
+        body{
+            position: relative;
+            height: 100vh;
+        }
+        div{
+            background-color: red;
+            position: absolute;
+            top: 20%;
+            
+            width: 20%;
+            padding: 0 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>BMI calculator</h2>
+        <p class="text">Height</p>
+        <input type="text" id="h" placeholder="Enter Your Height in Cm">
+        <p class="text">Weight</p>
+        <input type="text" id="w" placeholder="Enter Your Weight in Kgs">
+        <p id="result"></p>
+        <p id="category"></p>
+        <button id="btn" onClick="BMI()">Calculate</button>
+        <!-- <p id="info">Please enter your Height[CM] and weight[KG]</p> -->
+    </div>
+
+    <script>
+        function BMI(){
+            var h= document.getElementById("h").value;
+            var w= document.getElementById("w").value;
+            var bmi = w/(h/100*h/100);
+            var bmio = (bmi.toFixed(2));
+            result.innerHTML = bmio;
+            
+            if(bmio < 18.5){
+                category = "Underweight ";
+                result.style.color = "#ffc44d";
+            }
+            else if( bmio >= 18.5 && bmio <= 24.9 ){
+                category = "Normal Weight ";
+                result.style.color = "#0be881";
+            }
+            else if( bmio >= 25 && bmio <= 29.9 ){
+                category = "Overweight ";
+                result.style.color = "#ff884d";
+            }
+            else{
+                category = "Obese ";
+                result.style.color = "#ff5e57";
+            }
+            document.getElementById("category").innerHTML= category
+            
+        }
+            
+ </script>
+</body>
+</html>
