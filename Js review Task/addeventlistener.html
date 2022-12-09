@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addeventlistener</title>
+</head>
+<body>
+    
+    <h1 id="print"></h1>
+    <button type="button" id="btn">Click</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",myFunction);
+
+        function myFunction(){
+            // document.getElementById("print").innerHTML = prompt("Enter Name");
+            alert(prompt("Enter Name"))
+        }
+    </script>
+</body>
+</html>

@@ -35,7 +35,7 @@
         // // }
 
         // //3.if else-if
-
+ 
         // var member1 = 18;
         // var member2 = 21;
         // var member3 = 30;
@@ -59,7 +59,7 @@
 
 
         //Task
-        //1-Write A Program To Accept A Number From User And Print If It Is Even Or Odd
+        // //1-Write A Program To Accept A Number From User And Print If It Is Even Or Odd
         // let num = parseInt(prompt("Enter the Number"));
         // if(num%2==0){
         //     console.log("The Number " + num + " is Even");
@@ -68,7 +68,7 @@
         //     console.log("The Number " + num + " is Odd");
         // }
 
-        //2-Write A Program To Accept A Number And Print If The Number Is Positive/Negative 
+        // //2-Write A Program To Accept A Number And Print If The Number Is Positive/Negative 
         // let value = parseInt(prompt("Enter the values"));
         // if(value > 0){
         //     console.log("The value is Positive");
@@ -80,47 +80,110 @@
         //     console.log("The value is Negative");
         // }
 
-        // 3-A school has following rules for grading system:
-        // a. Below 25 - F
-        // b. 25 to 45 - E
-        // c. 45 to 50 - D
-        // d. 50 to 60 - C
-        // e. 60 to 80 - B
-        // f. Above 80 - A
-        // Ask user to enter mark and print the corresponding grade.
+        // // 3-A school has following rules for grading system:
+        // // a. Below 25 - F
+        // // b. 25 to 45 - E
+        // // c. 45 to 50 - D
+        // // d. 50 to 60 - C
+        // // e. 60 to 80 - B
+        // // f. Above 80 - A
+        // // Ask user to enter mark and print the corresponding grade.
 
-        let findgrade = parseInt(prompt("Enter the Marks, Ex 1 to 100"));
+        // let findgrade = parseInt(prompt("Enter the Marks, Ex 1 to 100"));
 
-        if(findgrade >= 80 && findgrade <= 100){
-            console.log("Grade A");
+        // if(findgrade >= 80 && findgrade <= 100){
+        //     console.log("Grade A");
+        // }
+        // else if(findgrade >= 60 && findgrade < 80){
+        //     console.log("Grade B");
+        // }
+        // else if(findgrade >= 50 && findgrade < 60){
+        //     console.log("Grade C");
+        // }
+        // else if(findgrade >= 45 && findgrade < 50){
+        //     console.log("Grade D");
+        // }
+        // else if(findgrade >= 25 && findgrade < 45){
+        //     console.log("Grade E");
+        // }
+        // else if(findgrade >=0 && findgrade <25){
+        //     console.log("Fail");
+        // }
+        // else{
+        //     console.log("Invalid Marks");
+        // }
+
+
+        // //4.sympols print
+
+        // let sym = prompt("Enter the Values");
+        
+        // if("a"<= sym && sym <="z"){
+        //     console.log("Small Alphebatic letter");
+        // }
+        // else if("A" <= sym && sym <= "Z"){
+        //     console.log("Capital Alphebatic letter");
+        // }
+        // else if(sym >=0){
+        //     console.log("The number is " + sym );
+        // }
+        // else{
+        //     console.log("Sympols");
+        // }
+
+
+        // // 5. height of the person
+
+        // let height = parseInt(prompt("Enter the height in cm, Ex- 150"));
+
+        // if(height < 150 ){
+        //     console.log("The person is smaller");
+        // }
+        // else if(height >= 150 && height <= 165){
+        //     console.log("The person is Average height");
+        // }
+        // else if(height >= 165 && height <= 195){
+        //     console.log("The person is Taller height");
+        // }
+        // else if(height >195){
+        //     console.log("The person is Abnormal");
+        // }
+
+
+        // find age in three peoples
+        let a = parseInt(prompt("Enter the age"));
+        let b = parseInt(prompt("Enter the age"));
+        let c = parseInt(prompt("Enter the age")); 
+        
+        if (a>b && a>c){
+            console.log("a is older");
+            if(b<c){
+                console.log("b is younger");
+            }
+            else{
+                console.log("c is younger");
+            }
         }
-        else if(findgrade >= 60 && findgrade < 80){
-            console.log("Grade B");
-        }
-        else if(findgrade >= 50 && findgrade < 60){
-            console.log("Grade C");
-        }
-        else if(findgrade >= 45 && findgrade < 50){
-            console.log("Grade D");
-        }
-        else if(findgrade >= 25 && findgrade < 45){
-            console.log("Grade E");
-        }
-        else if(findgrade >=0 && findgrade <25){
-            console.log("Fail");
+        else if(b>a && b>c){
+            console.log("b is older");
+            if(a<c){
+                console.log("a is younger");
+            }
+            else{
+                console.log("c is younger");
+            }
         }
         else{
-            console.log("Invalid Marks");
+            console.log("c is older");
+            if(a<b){
+                console.log("a is younger");
+            }
+            else{
+                console.log("b is younger");
+            }
         }
 
-
-
-
-
-
-
-
-
+        
 
 
 
