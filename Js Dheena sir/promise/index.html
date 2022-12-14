@@ -7,19 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="out"></p>
 
     <script>
 
-        const count = true;
-        let countValue = new Promise(function (resolve, reject) {
-            if (count) {
-                resolve("There is a count value.");
-            } else {
-                reject("There is no count value");
+        // const count = true;
+        // let countValue = new Promise(function (resolve, reject) {
+        //     if (count) {
+        //         resolve("There is a count value.");
+        //     } else {
+        //         reject("There is no count value");
+        //     }
+        // });
+        // console.log(countValue);
+
+
+        const promise1 = new Promise(function (Myvalue,reject){
+            setTimeout(function(){
+                Myvalue("This is promise method");},2000);
             }
+        );
+        promise1.then(function (values){
+            document.getElementById("out").innerHTML = values;
         });
-        console.log(countValue);
+
     </script>
 </body>
 </html>
